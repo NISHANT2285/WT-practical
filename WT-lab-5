@@ -1,1 +1,168 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enhanced Mobile Website with Colors</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="styles.css">
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<style>
+body {
+background-color: #f0f8ff;
+}
+.ui-header,
+.ui-footer {
+background-color: #007bff;
+color: white;
+}
+.ui-btn {
+background-color: #28a745;
+color: white;
+border-color: #28a745;
+}
+.ui-btn:hover {
+background-color: #218838;
+}
+.ui-grid-a img {
+border: 2px solid #007bff;
+width: 200px;
+height: 200px;
+}
+.ui-content {
+background-color: #ffffff;
+padding: 20px;
+border-radius: 10px;
+}
+h1,
+h2 {
+color: #007bff;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+border: 1px solid #007bff;
+border-radius: 5px;
+padding: 10px;
+}
+#intro_text{
+text-align: center;
+}
+</style>
+</head>
+<body>
+<div data-role="page" id="home">
+<div data-role="header">
+<h1>Home</h1>
+</div>
+<div role="main" class="ui-content">
+<p id="intro_text">Welcome to our mobile website! We create solutions for a mobile world.</p>
+<!-- Services Section -->
+<h2>Our Services</h2>
+<ul data-role="listview" data-inset="true">
+<li><a href="#service1">Mobile App Development</a></li>
+<li><a href="#service2">Web Design</a></li>
+ <li><a href="#service3">SEO Optimization</a></li>
+</ul>
+<!-- Image Gallery -->
+<h2>Gallery</h2>
+<div class="ui-grid-a">
+<div class="ui-block-a"><img src="app-development.png" alt="Image 1"></div>
+<div class="ui-block-b"><img src="app-development (2).png" alt="Image 2"></div>
+<div class="ui-block-a"><img src="search-engine-optimization.png" alt="Image 3"></div>
+<div class="ui-block-b"><img src="coding.png" alt="Image 4"></div>
+</div>
+<a href="#about" class="ui-btn ui-corner-all ui-shadow">About Us</a>
+<a href="#contact" class="ui-btn ui-corner-all ui-shadow">Contact Us</a>
+</div>
+<div data-role="footer">
+<h4>Footer Text</h4>
+</div>
+</div>
+<!-- Page 2: About -->
+<div data-role="page" id="about">
+<div data-role="header">
+<h1>About Us</h1>
+</div>
+<div role="main" class="ui-content">
+<h2>Who We Are</h2>
+<p>We are a passionate team of developers, designers, and strategists who build amazing digital 
+products. Our focus is on mobile-first design to ensure seamless user experiences across all 
+devices.</p>
+ <!-- Testimonials Section -->
+<h2>Testimonials</h2>
+<div data-role="collapsible-set">
+<div data-role="collapsible">
+<h3>Customer 1</h3>
+<p >"This company is amazing! They transformed our web presence!"</p>
+</div>
+<div data-role="collapsible">
+<h3>Customer 2</h3>
+<p>"Their mobile app development is top-notch. We’ve seen a 200% increase in mobile 
+traffic!"</p>
+</div>
+</div>
+<a href="#home" class="ui-btn ui-corner-all ui-shadow">Back to Home</a>
+</div>
+<div data-role="footer">
+<h4>Footer Text</h4>
+</div>
+</div>
+<!-- Page 3: Contact -->
+<div data-role="page" id="contact">
+<div data-role="header">
+<h1>Contact Us</h1>
+</div>
+<div role="main" class="ui-content">
+<h2>Get In Touch</h2>
+ <form>
+<label for="name">Name:</label>
+<input type="text" name="name" id="name" placeholder="Your Name">
+<label for="email">Email:</label>
+<input type="email" name="email" id="email" placeholder="you@example.com">
+<label for="message">Message:</label>
+<textarea name="message" id="message" placeholder="Your message here"></textarea>
+<input type="submit" value="Send Message" class="ui-btn ui-corner-all ui-shadow">
+</form>
+<a href="#home" class="ui-btn ui-corner-all ui-shadow">Back to Home</a>
+</div>
+<div data-role="footer">
+<h4>Footer Text</h4>
+</div>
+</div>
+<!-- Additional Pages for Services -->
+<div data-role="page" id="service1">
+<div data-role="header">
+<h1>Mobile App Development</h1>
+</div>
+<div role="main" class="ui-content">
+<p>We build powerful, intuitive, and user-friendly mobile apps for all platforms.</p>
+<a href="#home" class="ui-btn ui-corner-all ui-shadow">Back to Home</a>
+</div>
+</div>
+<div data-role="page" id="service2">
+<div data-role="header">
+<h1>Web Design</h1>
+</div>
+<div role="main" class="ui-content">
+<p>Our web design services offer responsive and creative solutions that enhance your brand’s 
+digital presence.</p>
+<a href="#home" class="ui-btn ui-corner-all ui-shadow">Back to Home</a>
+</div>
+</div>
+<div data-role="page" id="service3">
+<div data-role="header">
+<h1>SEO Optimization</h1>
+</div>
+<div role="main" class="ui-content">
+<p>We optimize your website to rank higher on search engines, increasing visibility and 
+traffic.</p>
+<a href="#home" class="ui-btn ui-corner-all ui-shadow">Back to Home</a>
+</div>
+</div>
+</body>
+</html>
+
 
